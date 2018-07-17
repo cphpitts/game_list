@@ -1,0 +1,58 @@
+.gameContainer > div:first-child {
+    float: left;
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+.gameContainer {
+    clear: both;
+    background-color: beige;
+    display: block;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.gameName {
+    float: right;
+    font-weight: bold;
+    display: block;
+    clear: both;
+}
+
+.gameOwner {
+    float: right;
+    display: block;
+    clear: both;
+}
+
+.gameContainer > div:first-child {
+    float: left;
+    display: block;
+    clear: both;
+}
+
+.gameText {
+    float: right;
+    padding: 10px;
+}
+
+div#userNamesContainer {
+    float: left;
+}
+
+#userNamesContainer input {
+    float: left;
+    display: block;
+}
+
+#userNamesContainer form {
+    width: 200px;
+}
+
+div#gameNames {
+    float: left;
+}
