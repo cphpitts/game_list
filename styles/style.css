@@ -1,58 +1,136 @@
-.gameContainer > div:first-child {
-    float: left;
+body {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  color: #52504f
 }
 
-img {
-    height: 100px;
-    width: auto;
+#gameNames a {
+    color: #52504f;
 }
 
-.gameContainer {
-    clear: both;
-    background-color: beige;
-    display: block;
-    width: 500px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.gameName {
-    float: right;
-    font-weight: bold;
-    display: block;
-    clear: both;
-}
-
-.gameOwner {
-    float: right;
-    display: block;
-    clear: both;
-}
-
-.gameContainer > div:first-child {
-    float: left;
-    display: block;
-    clear: both;
-}
-
-.gameText {
-    float: right;
+#userNamesContainer {
+    width: 200px;
     padding: 10px;
-}
-
-div#userNamesContainer {
-    float: left;
-}
-
-#userNamesContainer input {
-    float: left;
+    height: 100%;
+    min-height: 100%;
     display: block;
+    float:left;
 }
 
 #userNamesContainer form {
-    width: 200px;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #52504f;
+    width: 100%;
 }
 
-div#gameNames {
+#userNamesContainer input {
+    width: 90%;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#userNamesContainer button {
+    width: 48%;
+    height: 60px;
     float: left;
+}
+
+  #gameNames {
+  float: left;
+  display: block;
+  position: relative;
+  border-left: 1px #52504f solid;
+  width: 500px;
+  font-family: sans-serif;
+}
+#gameNames.list .gameContainer {
+  padding: 6px 14px;
+  border-bottom: 1px #52504f solid;
+  float: left;
+  width: 100%;
+}
+#gameNames.list .gameContainer > div:first-child {
+  float: left;
+  display: inline-grid;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-right: 15px;
+  display: block;
+  max-width: 100px;
+  position: relative;
+}
+#gameNames.list .gameText {
+  float: left;
+  height: 100px;
+  width: 300px;
+  position: relative;
+}
+#gameNames.list .gameContainer > div:first-child img {
+  max-width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-height: 100px;
+}
+#gameNames.list .gameName {
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+}
+#gameNames.list  .gameOwner {
+  bottom: 0;
+  position: absolute;
+}
+
+
+/* Grid View */
+
+#gameNames.grid .gameContainer {
+  width: 100px;
+  border-bottom: 1px solid #52504f;
+  float: left;
+  padding-right: 16px;
+  margin-bottom: 10px;
+}
+
+#gameNames.grid .gameContainer>div:first-child {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  position: relative;
+}
+#gameNames.grid img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100px;
+  max-width: 100px;
+  margin: auto;
+}
+#gameNames.grid .gameText {
+  height: 100px;
+  position: relative;
+}
+#gameNames.grid .gameName {
+  text-align: center;
+  font-size: 14px;
+}
+#gameNames.grid .gameOwner {
+  bottom: 10px;
+  position: absolute;
+  font-size: 12px;
+}
+#gameNames.grid {
+  padding-left: 10px;
 }
